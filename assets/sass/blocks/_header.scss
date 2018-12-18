@@ -1,0 +1,183 @@
+.header {
+    //position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    background: $headerBgColor image-url('right-bg.png') no-repeat right center;
+    color: $headerFontColor;
+
+    &.is-sticky {
+        position: fixed;
+    }
+
+    &-space {
+        //height: 100px;
+    }
+
+    &-nav,
+    &-btn {
+        margin-top: 10px;
+    }
+
+    &-btn {
+        color: #fff;
+        font-size: 12px;
+        //white-space: nowrap;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        [class*='fa-comment'] {
+            color: $buttonOutlinedFirstColor;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            [class*='fa-comment'] {
+                color: $buttonOutlinedSecondColor;
+            }
+        }
+
+
+    }
+}
+
+.logo {
+    &,
+    &-link,
+    &-img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.phone {
+    @extend %reset-list;
+    display: inline-block;
+    vertical-align: middle;
+
+    &-item {
+        margin: 0;
+    }
+
+    &-number {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.5;
+        @extend %smooth_animation;
+
+        &:hover {
+            color: darken(#fff, 15%);
+            text-decoration: none;
+        }
+    }
+}
+
+.social {
+    @extend %reset-list;
+
+    &,
+    &-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-item {
+        margin: 5px 7px;
+    }
+
+    &-link {
+        cursor: pointer;
+        display: block;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #57acbf;
+        color: #fff;
+        line-height: 42px;
+        text-align: center;
+        text-decoration: none;
+        @extend %smooth_animation;
+
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+
+.messenger {
+    @extend %reset-list;
+
+    &,
+    &-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-item {
+        margin: 0 5px;
+    }
+
+    &-link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+        }
+    }
+}
+
+.lang {
+    @extend %reset-list;
+    border: 1px solid #57acbf;
+    font-size: 0;
+
+    &,
+    &-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-item {
+        margin: 0;
+
+        & + & {
+            border-left: 1px solid #57acbf;
+        }
+
+        &:hover {
+            a {
+                color: #57acbf;
+            }
+        }
+
+        &.current-lang {
+            a {
+                cursor: default;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+
+        &,
+        a {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: block;
+            padding: 2px 5px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
