@@ -71,9 +71,9 @@
 
     <div class="copyright text-center">
         <div class="container">
-            <?php _e('Developed by', 'brainworks') ?>
-            <a href="https://brainworks.com.ua/" target="_blank">BRAIN WORKS</a>
-            &copy; <?php echo date('Y'); ?>
+            <?php _e('Все права пренадлежат', 'brainworks') ?>
+            <a href="https://www.crystaldent.ua">Crystal Dent</a>
+            &copy; 2017 - <?php echo date('Y'); ?>
 
             <?php /*
             &copy; <?php echo date('Y') ?> <?php _e('All rights reserved', 'brainworks') ?> "<a href="<?php echo esc_url(site_url()) ?>"><?php bloginfo('name') ?></a>"

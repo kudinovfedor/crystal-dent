@@ -39,12 +39,13 @@
         &-container {
             @extend %reset-list;
             font-size: 0;
+            display: flex;
+            justify-content: space-between;
         }
 
         &-item {
             display: inline-block;
             vertical-align: middle;
-            margin-right: 40px;
 
             .menu-item-has-children-arrow {
                 display: none;
@@ -98,6 +99,7 @@
                         top: 7px;
                         transform: scale(-1);
                     }
+                    background-color: gray;
                 }
 
                 &::after {
