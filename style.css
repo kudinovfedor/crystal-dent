@@ -6148,11 +6148,9 @@ a:hover .fa {
     .nav .menu-item-has-children {
       position: relative;
       padding-right: 20px; }
-      .nav .menu-item-has-children:hover {
-        background-color: gray; }
-        .nav .menu-item-has-children:hover::after {
-          top: 7px;
-          transform: scale(-1); }
+      .nav .menu-item-has-children:hover::after {
+        top: 7px;
+        transform: scale(-1); }
       .nav .menu-item-has-children::after {
         content: "";
         position: absolute;
@@ -6194,7 +6192,7 @@ a:hover .fa {
       display: none; }
     .nav .sub-menu-item-has-children {
       position: relative;
-      padding-right: 15px; }
+      padding-right: 0px; }
       .nav .sub-menu-item-has-children:hover::after {
         top: 14px;
         transform: scale(-1); }
