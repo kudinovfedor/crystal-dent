@@ -81,7 +81,7 @@
                                         'show_flags' => 0,
                                         'show_names' => 1,
                                         'hide_if_empty' => 0,
-                                        'display_names_as' => 'slug' // name
+                                        'display_names_as' => 'name' // name
                                     )); ?>
                                 </ul>
                             <?php } ?>

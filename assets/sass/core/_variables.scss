@@ -7,9 +7,9 @@ $shadow: 0 0 10px rgba(#000, .2);
 
 // BRAND
 $themeColorOne: #2c3e50; // header, menu, footer, title,
-$themeColorTwo: #57acbf; // menu active item, button, footer link hover, woo
-$themeColorThree: #3498db; // preHeader bg, wooOnSale
-$themeColorFour: #2980b9; //menu hover item, table border, preHeader font
+$themeColorTwo: #0f88a4; // menu active item, button, footer link hover, woo
+$themeColorThree: #0f88a4; // preHeader bg, wooOnSale
+$themeColorFour: #0f88a4; //menu hover item, table border, preHeader font
 
 // SELECTION
 $selectionBgColor: $themeColorTwo;
@@ -24,7 +24,7 @@ $preHeaderBgColor: $themeColorThree;
 $preHeaderColor: $themeColorFour;
 
 // HEADER
-$headerBgColor: #0f88a4;
+$headerBgColor: $themeColorTwo;
 $headerFontColor: #fff;
 $headerHighlightBgColor: $themeColorTwo;
 $headerHighlightColor: #fff;
@@ -37,7 +37,7 @@ $menuFontColorActive: #fff;
 
 $navArrowColor: #fff;
 $navHeaderMobileBGColor: #232323;
-$navHamburgerMobileColor: #0f88a4;
+$navHamburgerMobileColor: $themeColorTwo;
 
 // Menu mobile
 $menuMobileBGColor: #333;
@@ -52,14 +52,14 @@ $menuMobileSubMenuBGOnHover: #57acbf;
 $hamburger-offset: 8px;
 $hamburger-duration: .1s;
 $hamburger-delay: .1s;
-$hamburger-color: #0f88a4;
+$hamburger-color: $themeColorTwo;
 
 $menu-close-size: 25px;
-$menu-close-color: #0f88a4;
+$menu-close-color: $themeColorTwo;
 $menuContainerMobilePaddingTop: 30%;
 
 // FOOTER
-$footerBgColor: #0f88a4;
+$footerBgColor: $themeColorTwo;
 $footerFontColor: #fff;
 $footerLinkColorActive: darken($footerFontColor, 5%);
 
@@ -80,7 +80,7 @@ $buttonFontColorActive: #fff;
 $buttonBgColor: $themeColorTwo;
 $buttonBgColorActive: darken($buttonBgColor, 10%);
 $buttonBorderColor: $themeColorTwo;
-$buttonOutlinedFirstColor: #57acbf;
+$buttonOutlinedFirstColor: $themeColorTwo;
 $buttonOutlinedSecondColor: #fff;
 
 // TABLE
@@ -136,8 +136,8 @@ $errorBorderTopColor: #b81c23;
 $errorIconFontColor: #b81c23;
 
 // info
-$infoBorderTopColor: #1e85be;
-$infoIconFontColor: #1e85be;
+$infoBorderTopColor: $themeColorTwo;
+$infoIconFontColor: $themeColorTwo;
 
 // message
 $messageBorderTopColor: $themeColorTwo;

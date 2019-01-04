@@ -29,14 +29,17 @@
         //white-space: nowrap;
         padding-left: 20px;
         padding-right: 20px;
+        border: 1px solid #fff;
 
         [class*='fa-comment'] {
-            color: $buttonOutlinedFirstColor;
+            color: $buttonOutlinedSecondColor;
         }
 
         &:hover,
         &:focus,
         &:active {
+            color: $buttonOutlinedSecondColor;
+            
             [class*='fa-comment'] {
                 color: $buttonOutlinedSecondColor;
             }

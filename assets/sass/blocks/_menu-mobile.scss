@@ -151,7 +151,7 @@
         position: absolute;
         top: 200%;
         left: 0;
-        z-index: 33;
+        z-index: 999999;
         width: 250px;
         background-color: #fff;
         visibility: hidden;
@@ -166,20 +166,19 @@
             }
             &-has-children {
                 position: relative;
-                padding-right: 0px;
+                padding-right: 0;
                 &:hover {
                     &::after {
-                        top: 14px;
-                        transform: scale(-1);
+                        border-left-color: #fff;
                     }
                 }
                 &::after {
                     content: "";
                     position: absolute;
-                    top: 19px;
+                    top: 12px;
                     right: 5px;
                     border: 5px solid #000;
-                    border-color: #000 transparent transparent transparent;
+                    border-color: transparent transparent transparent #000;
                     transition: transform 0.3s ease-in-out;
                 }
             }
