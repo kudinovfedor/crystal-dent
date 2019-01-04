@@ -572,6 +572,7 @@ function bw_customize_register($wp_customize)
     $wp_customize->add_setting('bw_social_google_plus', array('default' => ''));
     $wp_customize->add_setting('bw_social_youtube', array('default' => ''));
     $wp_customize->add_setting('bw_social_odnoklassniki', array('default' => ''));
+    $wp_customize->add_setting('bw_social_foursquare', array('default' => ''));
 
     $wp_customize->add_control('bw_social_vk', array(
         'label' => __('Vk', 'brainworks'),
@@ -628,6 +629,13 @@ function bw_customize_register($wp_customize)
         'settings' => 'bw_social_odnoklassniki',
         'type' => 'text',
     ));
+
+	$wp_customize->add_control('bw_social_foursquare', array(
+		'label' => __('Foursquare', 'brainworks'),
+		'section' => 'bw_social',
+		'settings' => 'bw_social_foursquare',
+		'type' => 'text',
+	));
 
     // Section Phones
     $wp_customize->add_section('bw_phones', array(

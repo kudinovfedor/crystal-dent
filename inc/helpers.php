@@ -262,6 +262,11 @@ if (!function_exists('get_social')) {
                 'text' => 'Odnoklassniki',
                 'icon' => 'fab fa-odnoklassniki',
             ],
+            'foursquare' => [
+                'url' => get_theme_mod('bw_social_foursquare'),
+                'text' => 'Foursquare',
+                'icon' => 'fab fa-foursquare',
+            ],
         ];
 
         $socials = array_filter($_socials, function ($value) {

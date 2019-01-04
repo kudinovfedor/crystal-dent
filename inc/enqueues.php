@@ -22,7 +22,7 @@ function bw_enqueues()
     wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'),
         null, true);
 
-    if (is_front_page()) {
+    if (is_front_page() || is_home()) {
         wp_enqueue_script('slick');
     }
 

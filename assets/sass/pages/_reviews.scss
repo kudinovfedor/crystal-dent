@@ -27,6 +27,7 @@ $review-arrow-hover-background: #2c3e50;
     }
 
     &-item {
+        padding: 0 15px;
         margin-bottom: 30px;
     }
 
@@ -137,6 +138,10 @@ $review-arrow-hover-background: #2c3e50;
 
 @media only screen and (max-width: 554px) {
     .review {
+        &-item {
+            padding: 0;
+        }
+
         &-client {
             width: 100px;
             height: 100px;

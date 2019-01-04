@@ -5,11 +5,8 @@
     "main": "gulpfile.babel.js",
     "devDependencies": {
         "@babel/core": "^7.2.2",
-        "@babel/preset-env": "^7.2.0",
+        "@babel/preset-env": "^7.2.3",
         "@babel/register": "^7.0.0",
-        "babel-eslint": "^10.0.1",
-        "browser-sync": "^2.26.3",
-        "eslint": "^5.10.0",
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^6.0.0",
         "gulp-babel": "^8.0.0",
@@ -19,10 +16,8 @@
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-svgmin": "^2.1.0",
-        "gulp-svgstore": "^7.0.0",
-        "gulp-uglify": "^3.0.1",
-        "gulp-zip": "^4.2.0",
-        "husky": "^1.2.1"
+        "gulp-svgstore": "^7.0.1",
+        "gulp-uglify": "^3.0.1"
     },
     "babel": {
         "presets": [
@@ -32,13 +27,7 @@
     "scripts": {
         "start": "yarn install --modules-folder ./../node_modules",
         "sass": "node ./node_modules/gulp/bin/gulp.js sass",
-        "babel": "node ./node_modules/gulp/bin/gulp.js babel",
-        "lint": "./node_modules/.bin/eslint assets/js/es6/**/*.js"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint"
-        }
+        "babel": "node ./node_modules/gulp/bin/gulp.js babel"
     },
     "repository": {
         "type": "git",

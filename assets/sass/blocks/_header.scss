@@ -84,6 +84,7 @@
 
 .social {
     @extend %reset-list;
+    max-width: 170px;
 
     &,
     &-item {
@@ -92,7 +93,7 @@
     }
 
     &-item {
-        margin: 5px 7px;
+        margin: 5px 5px;
     }
 
     &-link {
