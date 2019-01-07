@@ -56,7 +56,7 @@
     };
     var stickFooter = function stickFooter(footer, container) {
         var el = $(footer);
-        var height = el.outerHeight() + 20 + "px";
+        var height = el.outerHeight() + "px";
         $(container).css("paddingBottom", height);
     };
     var reviews = function reviews(container) {

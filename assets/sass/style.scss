@@ -190,7 +190,7 @@ img {
     position: relative;
     width: 285px;
     display: block;
-    margin: 0 auto;
+    margin: 0 50px;
 
     .line {
         position: absolute;
@@ -313,6 +313,10 @@ img {
             }
         }
     }
+    
+    .team-member {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 544px) {
@@ -353,5 +357,9 @@ img {
                 border-bottom: 0;
             }
         }
+    }
+    
+    .team-member {
+        margin: 0 auto;
     }
 }
