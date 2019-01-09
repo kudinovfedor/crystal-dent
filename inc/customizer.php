@@ -573,6 +573,7 @@ function bw_customize_register($wp_customize)
     $wp_customize->add_setting('bw_social_youtube', array('default' => ''));
     $wp_customize->add_setting('bw_social_odnoklassniki', array('default' => ''));
     $wp_customize->add_setting('bw_social_foursquare', array('default' => ''));
+    $wp_customize->add_setting('bw_social_tripadvisor', array('default' => ''));
 
     $wp_customize->add_control('bw_social_vk', array(
         'label' => __('Vk', 'brainworks'),
@@ -634,6 +635,13 @@ function bw_customize_register($wp_customize)
 		'label' => __('Foursquare', 'brainworks'),
 		'section' => 'bw_social',
 		'settings' => 'bw_social_foursquare',
+		'type' => 'text',
+	));
+
+	$wp_customize->add_control('bw_social_tripadvisor', array(
+		'label' => __('Tripadvisor', 'brainworks'),
+		'section' => 'bw_social',
+		'settings' => 'bw_social_tripadvisor',
 		'type' => 'text',
 	));
 

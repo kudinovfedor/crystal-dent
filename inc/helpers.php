@@ -267,6 +267,11 @@ if (!function_exists('get_social')) {
                 'text' => 'Foursquare',
                 'icon' => 'fab fa-foursquare',
             ],
+            'tripadvisor' => [
+                'url' => get_theme_mod('bw_social_tripadvisor'),
+                'text' => 'Tripadvisor',
+                'icon' => 'fab fa-tripadvisor',
+            ],
         ];
 
         $socials = array_filter($_socials, function ($value) {

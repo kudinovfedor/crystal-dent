@@ -29,12 +29,12 @@
                         <div class="header-details">
                             <?php if (!empty($address)) {
                                 echo '<i class="far fa-map-marker-alt" aria-hidden="true"></i> ';
-                                echo esc_html($address);
+                                echo __($address, 'brainworks');
                             }
                             echo '<br>';
                             if (!empty($workTime)) {
                                 echo '<i class="far fa-clock" aria-hidden="true"></i> ';
-                                echo esc_html($workTime);
+                                echo __($workTime, 'brainworks');
                             } ?>
                         </div>
                     <?php } ?>
