@@ -24,3 +24,13 @@ require_once locate_template('/inc/feedback.php');
 require_once locate_template('/inc/shortcodes.php');
 require_once locate_template('/inc/meta-boxes.php');
 require_once locate_template('/inc/custom-post-types.php');
+
+if (function_exists('pll_register_string')) {
+    function bw_pll_register_string()
+    {
+        pll_register_string('Address', get_theme_mod('bw_additional_address'), 'Customize');
+        pll_register_string('Work Time', get_theme_mod('bw_additional_work_schedule'), 'Customize');
+    }
+
+    add_action('after_setup_theme', 'bw_pll_register_string');
+}

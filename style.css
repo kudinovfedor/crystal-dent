@@ -6448,23 +6448,30 @@ a:hover .fa {
           display: none; }
         .nav .menu-item .menu-item-has-children-arrow {
           position: absolute;
+          top: 0;
+          right: 10px;
+          z-index: 1;
           display: block;
           border: 0;
-          padding: 0;
-          border-right: 2px solid #fff;
-          border-bottom: 2px solid #fff;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          background-color: transparent;
-          width: 10px;
-          height: 10px;
-          top: 12px;
-          right: 15px; }
+          padding: 10px 13px 14px;
+          background-color: transparent; }
+          .nav .menu-item .menu-item-has-children-arrow::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
           .nav .menu-item .menu-item-has-children-arrow-active {
-            -webkit-transform: rotate(45deg) scale(-1);
-            -ms-transform: rotate(45deg) scale(-1);
-            transform: rotate(45deg) scale(-1); }
+            padding-top: 14px;
+            padding-bottom: 10px; }
+            .nav .menu-item .menu-item-has-children-arrow-active::before {
+              -webkit-transform: rotate(-135deg);
+              -ms-transform: rotate(-135deg);
+              transform: rotate(-135deg); }
       .nav .menu-link {
         color: #fff;
         display: block;

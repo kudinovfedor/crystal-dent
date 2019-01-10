@@ -25,16 +25,25 @@
                     <?php
                     $address = get_theme_mod('bw_additional_address');
                     $workTime = get_theme_mod('bw_additional_work_schedule');
+
                     if (!empty($address) || !empty($workTime)) { ?>
                         <div class="header-details">
                             <?php if (!empty($address)) {
                                 echo '<i class="far fa-map-marker-alt" aria-hidden="true"></i> ';
-                                echo __($address, 'brainworks');
+                                if(function_exists('pll_e')) {
+                                    pll_e($address);
+                                } else {
+                                    echo esc_html($address);
+                                }
                             }
                             echo '<br>';
                             if (!empty($workTime)) {
                                 echo '<i class="far fa-clock" aria-hidden="true"></i> ';
-                                echo __($workTime, 'brainworks');
+                                if(function_exists('pll_e')) {
+                                    pll_e($workTime);
+                                } else {
+                                    echo esc_html($workTime);
+                                }
                             } ?>
                         </div>
                     <?php } ?>
