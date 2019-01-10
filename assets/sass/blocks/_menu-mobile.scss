@@ -342,7 +342,7 @@
                 display: block;
 
                 &-has-children {
-                    padding-right: 5px;
+                    padding-right: 0;
                 }
 
                 &::after {
@@ -356,7 +356,7 @@
                     z-index: 1;
                     display: block;
                     border: 0;
-                    padding: 10px 13px 14px;
+                    padding: 10px 12px 14px;
                     background-color: transparent;
 
                     &::before {
@@ -409,7 +409,7 @@
                     display: none;
                 }
                 .menu-item-has-children-arrow {
-                    top: 12px;
+                    top: 0;
                 }
 
                 & + .sub-menu-item {

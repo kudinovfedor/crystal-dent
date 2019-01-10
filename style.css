@@ -6443,7 +6443,7 @@ a:hover .fa {
       .nav .menu-item {
         display: block; }
         .nav .menu-item-has-children {
-          padding-right: 5px; }
+          padding-right: 0; }
         .nav .menu-item::after {
           display: none; }
         .nav .menu-item .menu-item-has-children-arrow {
@@ -6453,7 +6453,7 @@ a:hover .fa {
           z-index: 1;
           display: block;
           border: 0;
-          padding: 10px 13px 14px;
+          padding: 10px 12px 14px;
           background-color: transparent; }
           .nav .menu-item .menu-item-has-children-arrow::before {
             content: '';
@@ -6491,7 +6491,7 @@ a:hover .fa {
       .nav .sub-menu-item::after {
         display: none; }
       .nav .sub-menu-item .menu-item-has-children-arrow {
-        top: 12px; }
+        top: 0; }
       .nav .sub-menu-link {
         color: #fff;
         font-size: 14px; } }
