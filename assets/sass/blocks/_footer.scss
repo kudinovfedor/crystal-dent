@@ -6,8 +6,9 @@
     font-size: 14px;
     line-height: 1.5;
     color: $footerFontColor;
-    background: $footerBgColor image-url('right-bg.png') no-repeat right center;
-
+    background: $footerBgColor;
+    overflow: hidden;
+    
     &-item {
         margin-bottom: 15px;
     }
@@ -34,6 +35,12 @@
 
     &-main {
         padding: 25px 0 5px;
+        
+        .crystals {
+            position: absolute;
+            top: -25px;
+            right: -385px;
+        }
     }
 
     &-menu {

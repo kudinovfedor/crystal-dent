@@ -13,6 +13,7 @@
 
     <div class="footer-main">
         <div class="container">
+               <img class="crystals" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/crystals-footer.png" alt="">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="footer-item col-xs-12 col-lg-2 footer-logo logo"><?php get_default_logo_link(); ?></div>
                 <?php if (has_nav_menu('second-menu')) { ?>
