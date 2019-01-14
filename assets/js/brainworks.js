@@ -177,7 +177,7 @@
         var links = $("a");
         links.each(function(index, element) {
             var $element = $(element), href = $element.attr("href");
-            if (href[0] === "#") {
+            if (href && href[0] === "#") {
                 $element.on("click", function(e) {
                     e.preventDefault();
                     $("html, body").animate({

@@ -388,8 +388,7 @@
 
         links.each((index, element) => {
             const $element = $(element), href = $element.attr('href');
-
-            if (href[0] === '#') {
+            if (href && href[0] === '#') {
                 $element.on('click', (e) => {
                     e.preventDefault();
 
