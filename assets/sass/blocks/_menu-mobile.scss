@@ -40,12 +40,14 @@
             @extend %reset-list;
             font-size: 0;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
         &-item {
             display: inline-block;
             vertical-align: middle;
+            margin-right: 10px;
 
             .menu-item-has-children-arrow {
                 display: none;

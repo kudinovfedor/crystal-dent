@@ -245,8 +245,13 @@ img {
 
     .nav {
         .menu {
+            &,
+            &-container {
+                justify-content: flex-start;
+            }
+
             &-item {
-                margin-right: 20px;
+                margin-right: 12px;
             }
         }
     }
