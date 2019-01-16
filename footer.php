@@ -73,7 +73,7 @@
     <div class="copyright text-center">
         <div class="container">
             <?php _e('Все права пренадлежат', 'brainworks') ?>
-            <a href="<?php echo esc_url(site_url()) ?>"><?php bloginfo('name') ?></a>
+            <a href="<?php echo esc_url(site_url()) ?>">® <?php bloginfo('name') ?></a>
             &copy; 2017 - <?php echo date('Y'); ?>
         </div>
     </div>
