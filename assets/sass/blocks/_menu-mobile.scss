@@ -3,7 +3,7 @@
 }
 
 //xs 544
-@media #{$mobile} {
+@media only screen and (max-width: 768px) {
     nav.main-nav {
         display: none;
     }
@@ -298,7 +298,7 @@
 }
 
 //xs 544
-@media #{$mobile} {
+@media only screen and (max-width: 768px) {
     .hamburger {
         display: inline-block;
         position: absolute;
@@ -352,6 +352,7 @@
                 }
 
                 .menu-item-has-children-arrow {
+                    cursor: pointer;
                     position: absolute;
                     top: 0;
                     right: 10px;

@@ -191,3 +191,26 @@
         }
     }
 }
+
+.viber,
+.telegram,
+.whatsapp {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: none no-repeat center center;
+    background-size: contain;
+}
+
+.viber {
+    background-image: image-url('viber-20.png');
+}
+
+.telegram {
+    background-image: image-url('telegram-20.png');
+}
+
+.whatsapp {
+    background-image: image-url('whatsapp-20.png');
+}

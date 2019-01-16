@@ -98,7 +98,7 @@ body {
     overflow-x: hidden;
     min-height: 100%;
 
-    @media #{$mobile} {
+    @media only screen and (max-width: 768px) {
         padding-top: 65px;
     }
 }
@@ -278,17 +278,12 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-    .phone {
-        margin-bottom: 5px;
-
-        &-item {
-            display: inline-block;
-            margin: 0 5px;
-        }
-    }
-
     .header {
         font-size: 13px;
+
+        .row {
+            display: block;
+        }
 
         &-btn {
             margin-top: 0;
@@ -297,38 +292,6 @@ img {
 
         &-lang {
             margin: 5px 0;
-        }
-    }
-
-    .footer {
-        &-item {
-            text-align: center;
-        }
-
-        &-menu,
-        &-phone {
-            column-count: auto;
-        }
-
-        &-menu {
-            li {
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 10px;
-                margin-bottom: 5px;
-            }
-        }
-    }
-    
-    .team-member {
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 544px) {
-    .header {
-        .row {
-            display: block;
         }
 
         &-details {
@@ -364,7 +327,42 @@ img {
             }
         }
     }
+
+    .phone {
+        margin-bottom: 5px;
+
+        &-item {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+
+    .footer {
+        &-item {
+            text-align: center;
+        }
+
+        &-menu,
+        &-phone {
+            column-count: auto;
+        }
+
+        &-menu {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
     
+    .team-member {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 544px) {
     .team-member {
         margin: 0 auto;
     }
