@@ -19,7 +19,7 @@
 <div class="wrapper">
     <header class="header js-header">
         <div class="container">
-           <img class="crystals" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/crystals.png" alt="">
+           <img class="crystals hide-on-mobile" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/crystals.png" alt="">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-sm-12 col-lg-2 logo header-item header-logo"><?php get_default_logo_link(); ?></div>
                 <div class="header-item col-sm-6 col-lg-5">

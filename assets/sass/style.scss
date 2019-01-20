@@ -7,7 +7,7 @@ Author URI: http://brainworks.com.ua
 Description:
 License:
 License URI:
-Version: 24.12.2018
+Version: 20.01.2019
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 // CORE
@@ -95,7 +95,7 @@ body {
 
 .wrapper {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     min-height: 100%;
 
     @media only screen and (max-width: 768px) {
@@ -184,6 +184,14 @@ img {
 
     img {
         margin: 10px 0;
+    }
+}
+
+@media #{$laptop} {
+    .servise{
+        h6 {
+            height: 36px;
+        }
     }
 }
 
@@ -364,6 +372,6 @@ img {
 
 @media only screen and (max-width: 544px) {
     .team-member {
-        margin: 0 auto;
+        margin: 0 30px;
     }
 }
