@@ -54,9 +54,9 @@
                 if (has_social()) { ?>
                     <div class="footer-item footer-social col-sm-12 col-lg-3 text-right">
                         <ul class="social">
-                            <?php foreach (get_social() as $social) { ?>
+                            <?php foreach (get_social() as $key => $social) { ?>
                                 <li class="social-item">
-                                    <a href="<?php echo esc_attr(esc_url($social['url'])); ?>" class="social-link"
+                                    <a href="<?php echo esc_attr(esc_url($social['url'])); ?>" class="social-link social-<?php echo esc_attr($key); ?>"
                                        target="_blank">
                                         <i class="<?php echo esc_attr($social['icon']); ?>" aria-hidden="true"
                                            aria-label="<?php echo esc_attr($social['text']); ?>"></i>
